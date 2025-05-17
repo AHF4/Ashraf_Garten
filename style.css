@@ -83,6 +83,14 @@ body {
     margin-bottom: 30px;
 }
 
+.service-card img {
+  height: 290px; 
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -173,4 +181,43 @@ footer {
 .back-to-top.active {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .hero-section .hero-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-section .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: #343a40;
+        padding-bottom: 1rem;
+    }
+
+    footer .row > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .service-card {
+        text-align: center;
+    }
+
+    .impressum-card {
+        padding: 20px;
+    }
 }

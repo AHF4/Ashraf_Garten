@@ -10,94 +10,140 @@
     <link rel="website icon" type="png" href="img/logo.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Startseite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="über_uns.html">Über uns</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="dienstleistungen.html">Dienstleistungen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projekte.html">Projekte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="impressum.html">Impressum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
+ <style>
+
+    .bepflanzung-titel {
+    position: relative;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.bepflanzung-titel::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+
+ </style>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                <li class="nav-item"><a class="nav-link" href="über_uns.html">Über uns</a></li>
+                <li class="nav-item"><a class="nav-link active" href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li class="nav-item"><a class="nav-link" href="projekte.html">Projekte</a></li>
+                <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Dienstleistungen -->
+<section class="py-5">
+    <div class="container">
+        <h1 class="text-center section-title mb-5">Unsere Dienstleistungen</h1>
+
+        <!-- Bepflanzung -->
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-3 h-100">
+                    <img src="img/Bepflanzung.jpg" alt="Bepflanzung" class="img-fluid mb-3 rounded">
+                    <h4 class="text-center bepflanzung-titel">Bepflanzung</h4>
+                    <p>Entdecken Sie die Kunst der grünen Gestaltung! Mit meiner langjährigen Erfahrung biete ich professionelle Dienstleistungen zur Bepflanzung von Grünanlagen an. Lassen Sie uns gemeinsam Ihre Grünflächen in einen blühenden Rückzugsort verwandeln.</p>
+                </div>
+            </div>
+            <!-- Baumfällung -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-3 h-100">
+                    <img src="img/Baumfällungen.jpg" alt="Baumfällung" class="img-fluid mb-3 rounded">
+                    <h4 class="text-center bepflanzung-titel">Baumfällung</h4>
+                    <p>Ich biete fachgerechte Baumfällung und Sturmschadenaufarbeitung an. Mit fachlichem Know-how stehe ich Ihnen zur Verfügung, um Bäume sicher zu fällen. Lassen Sie uns gemeinsam die besten Lösungen für Ihre Bedürfnisse finden.</p>
+                </div>
+            </div>
+            <!-- Baumpflege -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-3 h-100">
+                    <img src="img/Baumpflege.jpg" alt="Baumpflege" class="img-fluid mb-3 rounded">
+                    <h4 class="text-center bepflanzung-titel">Baumpflege</h4>
+                    <p>Mit meiner langjährigen Erfahrung stehe ich Ihnen zur Seite, wenn es um die Pflege Ihrer Bäume geht. Vertrauen Sie auf mein Wissen, um gemeinsam die besten Maßnahmen zu finden. Kontaktieren Sie mich für eine Beratung, und wir können unerwünschte Bäume entfernen, um Ihren Garten optimal zu gestalten.</p>
+                </div>
+            </div>
+            <!-- Pflasterarbeit -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-3 h-100">
+                    <img src="img/Pflastern.jpg" alt="Pflasterarbeit" class="img-fluid mb-3 rounded">
+                    <h4 class="text-center bepflanzung-titel">Pflasterarbeit</h4>
+                    <p>Ich biete professionelle Pflasterarbeiten für Terrassen und Auffahrten an. Gemeinsam erstelle ich mit Ihnen gerne ein Konzept, damit Ihr Außenbereich Ihren Wünschen entspricht. Lassen Sie uns Ihr Projekt realisieren!</p>
+                </div>
+            </div>
+            <!-- Heckenschnitt -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-3 h-100">
+                    <img src="img/Heckenschnitt.jpg" alt="Heckenschnitt" class="img-fluid mb-3 rounded">
+                    <h4 class="text-center bepflanzung-titel">Heckenschnitt</h4>
+                    <p>Ich biete präzise Formschnitte für Hecken an und führe Heckenkürzungen außerhalb der Vogelschutzzeiten durch. Mit meinem Service sorge ich dafür, dass Ihre Hecken optimal gestaltet und gepflegt werden.</p>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <section class="py-5">
-        <div class="container">
-            <h1 class="text-center section-title">Unsere Dienstleistungen</h1>
-            <div class="row">
-                
-            
-
-
-
-
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h5 class="text-white mb-4">Ashraf Design</h5>
+                <p>Ihr Experte für Garten- und Landschaftsbau. Wir verwandeln Ihre Träume in grüne Realität.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-white mb-4">Links</h5>
+                <div class="footer-links">
+                    <a href="index.html">Startseite</a>
+                    <a href="dienstleistungen.html">Dienstleistungen</a>
+                    <a href="projekte.html">Projekte</a>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-white mb-4">Dienstleistungen</h5>
+                <div class="footer-links">
+                    <a href="dienstleistungen.html">Gartengestaltung</a>
+                    <a href="dienstleistungen.html">Pflanzungen</a>
+                    <a href="dienstleistungen.html">Bewässerungssysteme</a>
+                    <a href="dienstleistungen.html">Gartenpflege</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-9 mb-7 mb-md-0">
+                <h5 class="text-white mb-4">Instagram</h5>
+                <div class="footer-links">
+                    <a href="https://www.instagram.com/GartenundLandschaftsBau.Kluck/" target="_blank">
+                        <img src="img/insta.png" alt="Instagram" class="instagram-logo">
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="text-white mb-4">Ashraf Design</h5>
-                    <p>Ihr Experte für Garten- und Landschaftsbau. Wir verwandeln Ihre Träume in grüne Realität.</p>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Links</h5>
-                    <div class="footer-links">
-                        <a href="index.html">Startseite</a>
-                        <a href="dienstleistungen.html">Dienstleistungen</a>
-                        <a href="projekte.html">Projekte</a>
-                        <a href="impressum.html">Impressum</a>
-                        <a href="kontakt.html">Kontakt</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Dienstleistungen</h5>
-                    <div class="footer-links">
-                        <a href="dienstleistungen.html">Gartengestaltung</a>
-                        <a href="dienstleistungen.html">Pflanzungen</a>
-                        <a href="dienstleistungen.html">Bewässerungssysteme</a>
-                        <a href="dienstleistungen.html">Gartenpflege</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-9 mb-7 mb-md-0">
-                    <h5 class="text-white mb-4">Instagram</h5>
-                    <div class="footer-links">
-                        <a href="https://www.instagram.com/GartenundLandschaftsBau.Kluck/" target="_blank">
-                            <img src="img/insta.png" alt="Instagram" class="instagram-logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center copyright">
-                <p class="mb-0">&copy; <span id="current-year"></span> Ashraf Design. Alle Rechte vorbehalten.</p>
-            </div>
+        <div class="text-center copyright">
+            <p class="mb-0">&copy; <span id="current-year"></span> Ashraf Design. Alle Rechte vorbehalten.</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
